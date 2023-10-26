@@ -1,0 +1,127 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: white;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeee;
+    padding: 17px;
+    align-items: center;
+    box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+}
+nav .logo{
+    margin-left: 22px;
+    font-size: 24px;
+}
+
+#logonew{
+height:100px;
+width:350px;
+}
+
+ul{
+    margin-right: 45px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+ul li a{
+    margin-inline: 22px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+ul li i{
+    font-size: 22px;
+}
+ul li #home{
+    color: rgb(5, 167, 167);
+}
+ul li a:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+ul li i:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 20px 50px;
+}
+
+.productsContainer{
+    display: flex;
+    padding: 30px 10px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img{
+    width: 80%;
+    object-fit: contain;
+    height: 80%;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+.product h2{
+    font-size: 24px;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.product h4{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product button{
+    width: 60px;
+    padding: 10px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 20px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 53px;
+    background-color: #EEEEEEEE;
+}
+
+.footer .footerText{
+    margin-inline: 85px;
+}
+
+.footerText p{
+    margin-top: 11px;
+}

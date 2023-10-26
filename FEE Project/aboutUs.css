@@ -1,0 +1,305 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: white;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeee;
+    padding: 17px;
+    align-items: center;
+    box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+}
+nav .logo{
+    margin-left: 22px;
+    font-size: 24px;
+}
+
+#logonew{
+height:100px;
+width:350px;
+}
+
+ul{
+    margin-right: 45px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+ul li a{
+    margin-inline: 22px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+ul li i{
+    font-size: 22px;
+}
+ul li #home{
+    color: rgb(5, 167, 167);
+}
+ul li a:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+ul li i:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+/* ************ aboutUs ************ */
+
+.aboutUs {
+  padding: 30px;
+  text-align: center;
+}
+
+.aboutUs h1 {
+  margin-bottom: 60px;
+  color:black;
+}
+
+.aboutUsContainer {
+  display: flex;
+}
+
+.aboutUsContainerLeft {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.aboutUsContainerLeft p {
+  padding: 20px;
+  padding-left: 20px;
+  color: rgba(83, 82, 82, 0.941);
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem;
+  border: 0.2rem solid #16a085;
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0 rgba(22, 160, 133, 0.2);
+  color: #16a085;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.btn span {
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+  background: #16a085;
+  color: #fff;
+  transition: all 0.2s ease-out;
+  margin-left: 0.5rem;
+}
+
+.btn:hover {
+  background: #16a085;
+  color: #fff;
+}
+
+.btn:hover span {
+  color: #16a085;
+  background: #fff;
+  margin-left: 1rem;
+}
+
+.aboutUsContainerRight {
+  width: 50%;
+}
+
+.aboutUsContainerRight img {
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 15px;
+}
+
+.aboutUs h1 {
+  font-family: cursive;
+  font-size: 40px;
+  
+  margin-bottom: 20px;
+}
+
+.aboutUs p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(83, 82, 82, 0.941);
+}
+
+/* ************ team ************ */
+
+.team {
+  padding: 30px;
+  text-align: center;
+}
+
+.teamContainer {
+  width: auto;
+  margin: 0 auto;
+  height: auto;
+}
+
+.team h1 {
+  font-family: cursive;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.teamMember {
+  max-width: 200px;
+  text-align: center;
+}
+
+.teamMember img {
+  width: 190px;
+  height: 185px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.teamMember h3 {
+  font-size: 24px;
+  color: #088178;
+  margin-bottom: 5px;
+}
+
+.teamMember p {
+  font-size: 16px;
+  color: rgba(83, 82, 82, 0.941);
+  font-weight: 600;
+}
+
+/* ********* details **********8 */
+.details {
+  padding: 40px;
+  margin-left: 50px;
+}
+
+details {
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+  color: #e0e3f5;
+}
+
+.details h1 {
+  font-family: cursive;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+details strong {
+  color: #6674cc;
+  font-size: 20px;
+}
+details p {
+  margin: 10px 0;
+}
+
+details[open] {
+  color: #4c51bf;
+  border: 1px solid #4c51bf;
+  padding: 10px;
+  background-color: #f3f4ff;
+  border-radius: 5px;
+}
+
+details[open] summary {
+  font-weight: bold;
+}
+
+/* ******** footer ************* */
+
+footer {
+  background: #e3e6f393;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.footerLeft {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 14vw;
+}
+
+.footerContact {
+  display: flex;
+  max-width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.footerContact p {
+  text-align: right;
+}
+
+.footerRight {
+  width: 50%;
+}
+
+.footerRightContainer {
+  margin-left: 10vw;
+}
+
+.footerRight h2 {
+  margin-bottom: 7px;
+}
+
+.aboutCompany {
+  color: rgba(83, 82, 82, 0.941);
+  font-size: 16px;
+  margin-bottom: 7px;
+  word-wrap: break-word;
+  max-width: 300px;
+}
+
+.icons {
+  font-size: 28px;
+}
+.icons i {
+  margin-right: 10px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 53px;
+    background-color: #EEEEEEEE;
+}
+
+.footer .footerText{
+    margin-inline: 85px;
+}
+
+.footerText p{
+    margin-top: 11px;
+}

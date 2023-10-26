@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@200;400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+section:nth-child(even) {
+  background: #e3e6f393;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* *********navBar ********** */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:#eeee;
+    padding: 17px;
+    align-items: center;
+    box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+}
+nav .logo{
+    margin-left: 22px;
+    font-size: 24px;
+}
+
+#logonew{
+height:100px;
+width:350px;
+}
+
+ul{
+    margin-right: 45px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+ul li a{
+    margin-inline: 22px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+ul li i{
+    font-size: 22px;
+}
+ul li #home{
+    color: rgb(5, 167, 167);
+}
+ul li a:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+ul li i:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+/* ***************************************** */
+.container {
+  display: flex;
+  padding-top: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#root {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.sidebar {
+  width: 40%;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-left: 20px;
+  height: 30rem;
+  padding: 15px;
+  text-align: center;
+}
+.head {
+  background-color:  rgb(2, 173, 173);;
+  border-radius: 3px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+}
+
+#count {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  padding: 15px;
+}
+.img-box {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.images {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+h2 {
+  font-size: 20px;
+  color: red;
+}
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(2, 173, 173);
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+button:hover {
+  background-color: #333;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+.row-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rowimg {
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+.fa-trash:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+.pay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  padding: 25px;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  z-index: 99999999;
+}
+
+.pay form {
+  padding: 20px;
+  width: 700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pay form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.pay form .row .col {
+  flex: 1 1 250px;
+}
+
+.pay form .row .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.pay form .row .col .inputBox {
+  margin: 15px 0;
+}
+
+.pay form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.pay form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.pay form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.pay form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.pay form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.pay form .row .col .inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.pay form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.pay form .submit-btn {
+  background: #2ecc71;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 53px;
+    background-color: #EEEEEEEE;
+}
+
+.footer .footerText{
+    margin-inline: 85px;
+}
+
+.footerText p{
+    margin-top: 11px;
+}
+
+.footerText h2{
+    color: black;
+}

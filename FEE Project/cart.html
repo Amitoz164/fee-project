@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="addtocart.css" />
+    <script
+      src="https://kit.fontawesome.com/92d70a2fd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="" id="logonew">
+        </div>
+        <ul>
+            <li>
+                <a href="index.html" style="text-decoration: none;">Home</a>
+                <a id="shop">Shop</a>
+                <a href="Login.html" style="text-decoration: none;">Login</a>
+                <a id="about" href="aboutUs.html">About Us</a>
+                 <a href="contact Us.html">Contact Us</a>
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+      <div id="root"></div>
+      <div class="sidebar">
+        <div class="head">
+          <p>My Cart</p>
+          <p id="count">0</p>
+        </div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+          <h3>Total</h3>
+          <h2 id="total">$ 0.00</h2>
+        </div>
+      </div>
+    </div>
+
+    <section class="pay" id="payment">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">billing address</h3>
+
+            <div class="inputBox">
+              <span>full name :</span>
+              <input type="text" placeholder="xyz" />
+            </div>
+            <div class="inputBox">
+              <span>email :</span>
+              <input type="email" placeholder="exyz@gmail.com" />
+            </div>
+            <div class="inputBox">
+              <span>address :</span>
+              <input type="text" placeholder="place" />
+            </div>
+            <div class="inputBox">
+              <span>city :</span>
+              <input type="text" placeholder="xyz" />
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>state :</span>
+                <input type="text" placeholder="india" disabled />
+              </div>
+              <div class="inputBox">
+                <span>zip code :</span>
+                <input type="text" placeholder="400400" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">payment</h3>
+
+            <div class="inputBox">
+              <span>cards accepted :</span>
+              <img src="https://wecare-six.vercel.app/card_img.png" alt="" />
+            </div>
+            <div class="inputBox">
+              <span>name on card :</span>
+              <input type="text" placeholder="xyz" />
+            </div>
+            <div class="inputBox">
+              <span>credit card number :</span>
+              <input type="number" placeholder="9999-9999-9999-9999" />
+            </div>
+            <div class="inputBox">
+              <span>exp month :</span>
+              <input type="text" placeholder="month" />
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>exp year :</span>
+                <input type="month" />
+              </div>
+              <div class="inputBox">
+                <span>CVV :</span>
+                <input type="text" placeholder="111" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input
+          type="submit"
+          value="proceed to checkout"
+          class="submit-btn"
+          onclick="window.alert('Payment Successfull!!')"
+        />
+      </form>
+      <p id="closePayment" class="close-button" onclick="closePayment()">X</p>
+    </section>
+
+
+    <div class="footer">
+        <div class="footerText">
+            <h2>Legal Information</h2>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p></p>
+            <p></p>
+
+        </div>
+        <div class="footerText">
+            <h2>About US</h2>
+            <p>Adrress :  <br>
+                </p>
+            <p>Service's</p>
+            <p>Customer</p>
+            <p>Satisfation</p>
+
+        </div>
+        <div class="footerText">
+            <h2>Need Help</h2>
+            <p>Email:-urbanwardrobe99@gmail.in</p>
+            <p>Phone Number</p>
+            <p>8765987634</p>
+            <p></p>
+
+        </div>
+        <div class="footerText">
+            <h2>Trending</h2>
+            <p>New Arrivals</p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        </div>
+    </div>
+    <script src="addtocart.js"></script>
+  </body>
+</html>
